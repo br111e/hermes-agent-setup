@@ -1,0 +1,1 @@
+Bagus Fachri: only has LightVela console access for his VPS (no direct DNS/firewall/security-group UI). Prefers Docker-first deployment ("full docker") over native services/panels; asked about cPanel/aaPanel/Railway as alternatives but went with full Docker + Cloudflare Tunnel.

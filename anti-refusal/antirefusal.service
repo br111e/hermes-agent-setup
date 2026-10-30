@@ -1,0 +1,16 @@
+[Unit]
+Description=Hermes anti-refusal guardrail proxy
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/agentuser/.hermes/anti-refusal
+ExecStart=/home/agentuser/.hermes/hermes-agent/venv/bin/python3 /home/agentuser/.hermes/anti-refusal/proxy.py
+Restart=on-failure
+RestartSec=3
+User=agentuser
+# Read the LightVela key from the hermes env without exposing it to env vars
+EnvironmentFile=-/home/agentuser/.hermes/.env
+
+[Install]
+WantedBy=multi-user.target

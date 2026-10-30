@@ -1,0 +1,14 @@
+description_auto: false
+display_name: Luccy
+ui_meta:
+  lightvela_avatar: blob:#8B5CF6
+  lightvela_appearance:
+    version: 1
+    skin: lavender
+    top: none
+    hat: none
+    shoes: none
+    expression: open
+    style: doodle
+    shape: bean
+    doodads: []
